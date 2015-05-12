@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+  <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+
+    .ng-hide {
+      display: none !important;
+    }
+  </style>
+
+  <title>hotTrophy</title>
+  <link rel="shortcut icon" type="image/ico" href="assets/medias/favicon.ico"/>
+  <meta name="description" content="Tournament generator">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <base href="/">
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="lib/bower-0.0.0.min.css">
+  <!-- endinject -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/hotTrophy-0.0.0.min.css">
+  <!-- endinject -->
+
+</head>
+<body>
+
+<div ui-view="root"></div>
+
+<!-- bower:js -->
+<script src="lib/bower-0.0.0.min.js"></script>
+<!-- endinject -->
+
+<!-- inject:js -->
+<script src="app/hotTrophy-0.0.0.min.js"></script>
+<!-- endinject -->
+
+</body>
+</html>
